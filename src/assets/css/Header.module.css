@@ -1,0 +1,15 @@
+.header{
+    background-color: #F1F2F4;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 60px;
+}
+
+.darkLightModeIcon{
+    width: 40px;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.experiences{
+    display: flex;
+    gap: 60px;
+}
+
+.experience{
+    text-align: center;
+}
+
+.experience p:first-of-type{
+    font-weight: 500;
+}
+
+.experience p:last-of-type{
+    font-size: 14px;
+}

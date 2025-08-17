@@ -1,0 +1,27 @@
+.userImageContainer{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    border: 4px solid #FBD144;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.userImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.Intro{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.socialIcons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
