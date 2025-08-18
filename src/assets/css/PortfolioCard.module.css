@@ -1,0 +1,21 @@
+.portfolioCard{
+    width: 49%;
+    margin-bottom: 20px;
+}
+
+.portfolioCard p{
+    font-size: 13px;
+}
+
+.portfolioCardImageContainer{
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+}
+
+.portfolioCardImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
