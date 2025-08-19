@@ -9,8 +9,8 @@ const projectCards = [
 
 function Portfolio(){
     return <div className={styles.portfolio}>
-        {projectCards.map(card => {
-            return <PortfolioCard imageUrl={card.imageUrl} tags={card.tags} title={card.title}/>
+        {projectCards.map((card, _) => {
+            return <PortfolioCard key={_} imageUrl={card.imageUrl} tags={card.tags} title={card.title}/>
         })}
     </div>
 }

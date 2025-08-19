@@ -1,7 +1,11 @@
+import { useSelector } from "react-redux";
 import styles from "../assets/css/Experiences.module.css";
 
 function Experiences(){
-    return <div className={`${styles.experiences} mt-4`}>
+
+    const {isDark} = useSelector(store => store.darkMode);
+
+    return <div className={`${styles.experiences} ${isDark && styles.whiteExperience} mt-4`}>
         <div className={styles.experience}>
             <p>2+</p>
             <p>Years of Experience</p>

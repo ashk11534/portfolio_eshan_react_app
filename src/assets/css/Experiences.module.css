@@ -14,3 +14,7 @@
 .experience p:last-of-type{
     font-size: 14px;
 }
+
+.whiteExperience{
+    color: #fff;
+}

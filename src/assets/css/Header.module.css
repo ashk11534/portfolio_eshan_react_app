@@ -13,3 +13,7 @@
     width: 40px;
     cursor: pointer;
 }
+
+.darkNavBar{
+    background-color: #171F26 !important;
+}
