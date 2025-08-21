@@ -3,3 +3,33 @@
     justify-content: space-between;
     gap: 10px;
 }
+
+/* Responsiveness (start) */
+
+@media(max-width: 1400px){
+
+}
+
+@media(max-width: 1200px){
+
+}
+
+@media(max-width: 992px){
+
+}
+
+@media(max-width: 768px){
+
+}
+
+@media(max-width: 576px){
+  .educationQualifications{
+    flex-wrap: wrap;
+  }
+
+  .educationQualifications > div{
+    width: 100%;
+  }
+}
+
+/* Responsiveness (end) */

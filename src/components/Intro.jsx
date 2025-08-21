@@ -9,7 +9,7 @@ function Intro(){
     const {isDark} = useSelector(store => store.darkMode);
 
     return (
-        <div className={styles.Intro}>
+        <div className={styles.intro}>
             <div className={styles.userImageContainer}>
                 <img src="images/ashik.jpg" className={styles.userImage}/>
             </div>

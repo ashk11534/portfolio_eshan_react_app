@@ -19,3 +19,37 @@
     border-radius: 16px;
     object-fit: cover;
 }
+
+.darkPortfolioCard {
+    color: #fff;
+}
+
+/* Responsiveness (start) */
+
+@media(max-width: 1400px){
+
+}
+
+@media(max-width: 1200px){
+
+}
+
+@media(max-width: 992px){
+
+}
+
+@media(max-width: 768px){
+
+}
+
+@media(max-width: 576px){
+  .portfolioCard{
+    width: 100%;
+  }
+
+  .portfolioCardImageContainer{
+    height: 250px;
+  }
+}
+
+/* Responsiveness (end) */

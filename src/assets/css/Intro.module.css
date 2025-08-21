@@ -14,7 +14,7 @@
     object-fit: cover;
 }
 
-.Intro{
+.intro{
     display: flex;
     gap: 20px;
     align-items: center;
@@ -29,3 +29,37 @@
 .whiteIntro h3,  .whiteIntro p{
     color: #fff !important;
 }
+
+/* Responsiveness (start) */
+
+@media(max-width: 1400px){
+
+}
+
+@media(max-width: 1200px){
+
+}
+
+@media(max-width: 992px){
+
+}
+
+@media(max-width: 768px){
+
+}
+
+@media(max-width: 576px){
+  .intro{
+    flex-direction: column;
+  }
+
+  .userInfo{
+    text-align: center;
+  }
+
+  .userInfo .socialIcons{
+    justify-content: center;
+  }
+}
+
+/* Responsiveness (end) */

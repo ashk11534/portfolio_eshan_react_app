@@ -2,3 +2,38 @@
     display: flex;
     gap: 70px;
 }
+
+/* Responsiveness (start) */
+
+@media(max-width: 1400px){
+
+}
+
+@media(max-width: 1200px){
+
+}
+
+@media(max-width: 992px){
+
+}
+
+@media(max-width: 768px){
+
+}
+
+@media(max-width: 576px){
+  .hardSkills{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .hardSkills > div{
+    width: 100%;
+  }
+
+  .skillImageContainer{
+    width: 100%;
+  }
+}
+
+/* Responsiveness (end) */
