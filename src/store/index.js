@@ -25,7 +25,7 @@ const darkModeSlice = createSlice({
 })
 
 const portfolioStore = configureStore({
-    reducer: {tab: tabSlice.reducer, darkMode: darkModeSlice.reducer},
+    reducer: {tab: tabSlice.reducer, darkMode: darkModeSlice.reducer}
 })
 
 export const tabSliceActions = tabSlice.actions;
