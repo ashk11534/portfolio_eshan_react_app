@@ -6,7 +6,6 @@ import Experiences from "./Experiences";
 import Intro from "./Intro";
 import Portfolio from "./Portfolio";
 import Tabs from "./Tabs";
-import PortfolioDetailsModal from "./PortfolioDetailsModal";
 
 function MainContent(){
     return (
@@ -19,7 +18,6 @@ function MainContent(){
                 <Outlet>
                     <Portfolio/>
                     <About/>
-                    <PortfolioDetailsModal/>
                 </Outlet>
             </div>
         </div>

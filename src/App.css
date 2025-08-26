@@ -21,6 +21,7 @@ p{
 
 .darkBody{
   background-color: #0C151D !important;
+  min-height: 100vh;
 }
 
 /* Responsiveness (start) */

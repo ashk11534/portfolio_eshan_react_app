@@ -19,10 +19,14 @@ const router = createBrowserRouter([
         element: <MainContent/>, 
         children: [
           {path: "/", element: <Portfolio/>},
-          {path: "/about", element: <About/>},
-          {path: "/project-details/:project_id", element: <PortfolioDetailsModal/>}
+          {path: "/about", element: <About/>}
         ]
-      }, 
+      },
+      
+      {
+        path: "/project-details/:project_id", 
+        element: <PortfolioDetailsModal/>
+      }
     ]
   }
 ])

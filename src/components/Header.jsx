@@ -1,5 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux';
 import styles from '../assets/css/Header.module.css';
+import whiteLogo from "../assets/logo/white-logo.png";
+import darkLogo from "../assets/logo/logo.png";
+import lightModeIcon from "../assets/light-dark-mode-icons/light-mode-icon.png";
+import darkModeIcon from "../assets/light-dark-mode-icons/dark-mode-icon.png";
 import { darkModeSliceActions } from '../store';
 
 function Header(){
@@ -9,8 +13,8 @@ function Header(){
     const dispatch = useDispatch()
 
     return <div className={`${styles.header} container-fluid ${isDark && styles.darkNavBar}`}>
-        <img src={`images/${isDark ? 'white-logo' : 'logo'}.png`} className={styles.logo}/>
-        <img src={`images/${isDark ? 'light' : 'dark'}-mode-icon.png`} className={styles.darkLightModeIcon} onClick={() => dispatch(darkModeSliceActions.toggleMode())}/>
+        <img src={isDark ? whiteLogo : darkLogo} className={styles.logo}/>
+        <img src={isDark ? lightModeIcon : darkModeIcon} className={styles.darkLightModeIcon} onClick={() => dispatch(darkModeSliceActions.toggleMode())}/>
     </div>
 }
 
