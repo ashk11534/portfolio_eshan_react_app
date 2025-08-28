@@ -9,9 +9,9 @@ function Tabs(){
     const {isDark} = useSelector((store) => store.darkMode);
     const dispatch = useDispatch();
 
-    return <div className={`${styles.tabs} my-3 ${isDark && styles.darkTabs}`}>
-        <Link to="/" className={`${isDark && styles.darkTab} ${styles.tab} ${activeTab === "portfolio" && styles.active} ${activeTab === "portfolio" && isDark && styles.darkActiveTab}`} onClick={() => dispatch(tabSliceActions.selectPortfolioTab())}>Portfolio</Link>
-        <Link to="/about" className={`${isDark && styles.darkTab} ${styles.tab} ${activeTab === "about" && styles.active} ${activeTab === "about" && isDark && styles.darkActiveTab}`} onClick={() => dispatch(tabSliceActions.selectAboutTab())}>About</Link>
+    return <div className={`${styles.tabs} my-3 ${isDark ? styles.darkTabs : ""}`}>
+        <Link to="/" className={`${isDark ? styles.darkTab : ""} ${styles.tab} ${activeTab === "portfolio" && styles.active} ${activeTab === "portfolio" && (isDark ? styles.darkActiveTab : "")}`} onClick={() => dispatch(tabSliceActions.selectPortfolioTab())}>Portfolio</Link>
+        <Link to="/about" className={`${isDark ? styles.darkTab : ""} ${styles.tab} ${activeTab === "about" && styles.active} ${activeTab === "about" && (isDark ? styles.darkActiveTab : "")}`} onClick={() => dispatch(tabSliceActions.selectAboutTab())}>About</Link>
     </div>
 }
 

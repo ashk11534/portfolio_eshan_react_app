@@ -10,7 +10,7 @@ function App(){
 
   const {isDark} = useSelector(store => store.darkMode);
 
-  return <div className={`app ${isDark && "darkBody"}`}>
+  return <div className={`app ${isDark ? "darkBody" : ""}`}>
     <Header/>
     <Outlet>
       <MainContent/>

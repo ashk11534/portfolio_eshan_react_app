@@ -1,6 +1,7 @@
 .experiences{
     display: flex;
     gap: 60px;
+    justify-content: center;
 }
 
 .experience{

@@ -1,13 +1,13 @@
 import styles from "../assets/css/HardSkill.module.css";
 
-function HardSkill(){
+function HardSkill({skillImage, numberOfProjects, title}){
     return (
         <div className={styles.hardSkill}>
             <div className={styles.skillImageContainer}>
-                <img className={styles.skillImage} src="images/user-image.jpg"/>
+                <img className={styles.skillImage} src={skillImage}/>
             </div>
-            <p style={{fontSize: "12px"}} className="my-1">20 projects</p>
-            <p style={{fontSize: "15px"}}>JavaScript</p>
+            <p style={{fontSize: "12px"}} className="my-1">{numberOfProjects} projects</p>
+            <p style={{fontSize: "15px"}}>{title}</p>
         </div>
     );
 }

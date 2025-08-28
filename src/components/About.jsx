@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 function About(){
     const {isDark} = useSelector((store) => store.darkMode);
 
-    return <div className={isDark && styles.about}>
+    return <div className={isDark ? styles.about : ""}>
         <AboutIntro/>
         <WorkExperiences/>
         <EducationQualifications/>
