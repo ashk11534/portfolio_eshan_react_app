@@ -6,12 +6,10 @@ function SoftSkills() {
                 
     useEffect(() => {
         async function fetch_about_info() {
-            const response = await fetch("http://127.0.0.1:8000/about-info");
+            const response = await fetch("https://akibeshan.pythonanywhere.com/about-info");
             const data = await response.json();
 
             setSoftSkills(data.about_info.soft_skills ? data.about_info.soft_skills : []);
-
-            console.log(data.about_info.setSoftSkills)
         }
 
         fetch_about_info()

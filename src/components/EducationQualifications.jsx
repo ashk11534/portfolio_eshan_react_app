@@ -7,12 +7,10 @@ function EducationQualifications(){
             
     useEffect(() => {
         async function fetch_about_info() {
-            const response = await fetch("http://127.0.0.1:8000/about-info");
+            const response = await fetch("https://akibeshan.pythonanywhere.com/about-info");
             const data = await response.json();
 
             setEducations(data.about_info.educations ? data.about_info.educations : []);
-
-            console.log(data.about_info.educations)
         }
 
         fetch_about_info()

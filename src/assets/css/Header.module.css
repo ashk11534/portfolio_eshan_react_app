@@ -12,6 +12,7 @@
 .darkLightModeIcon{
     width: 40px;
     cursor: pointer;
+    align-self: center;
 }
 
 .darkNavBar{

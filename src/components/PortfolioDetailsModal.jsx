@@ -21,7 +21,7 @@ function PortfolioDetailsModal(){
         async function fetch_project(){
             setLoading(true);
 
-            const response = await fetch(`http://127.0.0.1:8000/projects/${project_id}`);
+            const response = await fetch(`https://akibeshan.pythonanywhere.com/projects/${project_id}`);
             const data = await response.json();
             setProject(data.project);
 

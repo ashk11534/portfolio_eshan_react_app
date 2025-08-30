@@ -7,12 +7,10 @@ function Experiences(){
             
     useEffect(() => {
         async function fetch_basic_configuration() {
-            const response = await fetch("http://127.0.0.1:8000/basic-configuration");
+            const response = await fetch("https://akibeshan.pythonanywhere.com/basic-configuration");
             const data = await response.json();
 
             setBasicConf(data.basic_conf);
-
-            console.log(data.basic_conf)
         }
 
         fetch_basic_configuration()

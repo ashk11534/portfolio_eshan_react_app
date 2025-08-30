@@ -6,12 +6,10 @@ function WorkExperiences(){
         
     useEffect(() => {
         async function fetch_about_info() {
-            const response = await fetch("http://127.0.0.1:8000/about-info");
+            const response = await fetch("https://akibeshan.pythonanywhere.com/about-info");
             const data = await response.json();
 
             setWorkExperiences(data.about_info.work_experiences ? data.about_info.work_experiences : []);
-
-            console.log(data.about_info.work_experiences)
         }
 
         fetch_about_info()
