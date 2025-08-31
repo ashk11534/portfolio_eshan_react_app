@@ -9,6 +9,15 @@
     width: 60px;
 }
 
+.contactMeBtn{
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: #FBD144;
+    border-radius: 6px;
+    padding: 4px 10px;
+}
+
 .darkLightModeIcon{
     width: 40px;
     cursor: pointer;

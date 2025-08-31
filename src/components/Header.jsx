@@ -4,7 +4,7 @@ import whiteLogo from "../assets/logo/white-logo.png";
 import darkLogo from "../assets/logo/logo.png";
 import lightModeIcon from "../assets/light-dark-mode-icons/light-mode-icon.png";
 import darkModeIcon from "../assets/light-dark-mode-icons/dark-mode-icon.png";
-import { darkModeSliceActions } from '../store';
+import { contactFormSliceActions, darkModeSliceActions } from '../store';
 import { useEffect, useState } from 'react';
 
 function Header(){
@@ -29,7 +29,10 @@ function Header(){
 
     return <div className={`${styles.header} container-fluid ${isDark ? styles.darkNavBar : ""}`}>
         <img src={isDark ? basicConf.logo_light : basicConf.logo_dark} className={styles.logo}/>
-        <img src={isDark ? lightModeIcon : darkModeIcon} className={styles.darkLightModeIcon} onClick={() => dispatch(darkModeSliceActions.toggleMode())}/>
+        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '15px'}}>
+            <button className={styles.contactMeBtn} onClick={() => dispatch(contactFormSliceActions.toggleVisibility())}>Contact Me</button>
+            <img src={isDark ? lightModeIcon : darkModeIcon} className={styles.darkLightModeIcon} onClick={() => dispatch(darkModeSliceActions.toggleMode())}/>
+        </div>
     </div>
 }
 

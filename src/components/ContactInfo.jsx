@@ -2,6 +2,9 @@ import styles from "../assets/css/ContactInfo.module.css";
 import { LiaDownloadSolid } from "react-icons/lia";
 import { FaUpwork } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 
 function ContactInfo(){
@@ -37,8 +40,21 @@ function ContactInfo(){
         <a href={basicConf.gmail_link} className={styles.contactIconContainer} style={{textDecoration: "none", color: "#333"}}>
             <FaUpwork size={20}/>
         </a>
+
         <a href={basicConf.linkedin_link} className={styles.contactIconContainer} style={{textDecoration: "none", color: "#333"}}>
             <FaLinkedin size={20}/>
+        </a>
+
+        <a href={basicConf.youtube_link} className={styles.contactIconContainer} style={{textDecoration: "none", color: "#333"}}>
+            <FaYoutube size={20}/>
+        </a>
+
+        <a href={basicConf.instagram_link} className={styles.contactIconContainer} style={{textDecoration: "none", color: "#333"}}>
+            <FaInstagram size={20}/>
+        </a>
+
+        <a href={basicConf.github_link} className={styles.contactIconContainer} style={{textDecoration: "none", color: "#333"}}>
+            <FaGithub size={20}/>
         </a>
     </div>;
 }

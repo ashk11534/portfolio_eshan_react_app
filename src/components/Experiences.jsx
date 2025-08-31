@@ -34,6 +34,11 @@ function Experiences(){
             <p>{basicConf.your_number_of_completed_projects}</p>
             <p>Completed Projects</p>
         </div>
+
+        <div className={styles.experience}>
+            <p>{basicConf.your_number_of_completed_projects}</p>
+            <p>Research Papers</p>
+        </div>
     </div>
 }
 

@@ -10,6 +10,10 @@ const tabSlice = createSlice({
 
         selectAboutTab: (state, action) => {
             state.activeTab = "about"
+        },
+
+        selectAchievementsTab: (state, action) => {
+            state.activeTab = "achievements"
         }
     }
 })
@@ -24,12 +28,24 @@ const darkModeSlice = createSlice({
     }
 })
 
+const contactFormSlice = createSlice({
+    name: 'contactForm',
+    initialState: {isVisible: false},
+    reducers: {
+        toggleVisibility: (state, action) => {
+            state.isVisible = !state.isVisible;
+        }
+    }
+})
+
 const portfolioStore = configureStore({
-    reducer: {tab: tabSlice.reducer, darkMode: darkModeSlice.reducer}
+    reducer: {tab: tabSlice.reducer, darkMode: darkModeSlice.reducer, contactForm: contactFormSlice.reducer}
 })
 
 export const tabSliceActions = tabSlice.actions;
 
 export const darkModeSliceActions = darkModeSlice.actions;
+
+export const contactFormSliceActions = contactFormSlice.actions;
 
 export default portfolioStore;

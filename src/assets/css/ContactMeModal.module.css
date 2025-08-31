@@ -1,0 +1,65 @@
+.contactMeModalContainer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.contactMeModal{
+    width: 600px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.contactMeModalHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.contactMeModalBody{
+    padding: 10px 25px;
+}
+
+.contactMeInput{
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contactMeInput:first-of-type{
+    margin-top: 15px;
+}
+
+textarea{
+    margin-top: 0px !important;
+    margin-bottom: 0 !important;
+}
+
+.contactMeModalFooter{
+    padding: 0 25px 20px 25px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.contactSendBtn{
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: #FBD144;
+    border-radius: 6px;
+    padding: 5px 15px;
+}

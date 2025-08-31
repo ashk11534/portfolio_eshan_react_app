@@ -12,6 +12,7 @@ function Tabs(){
     return <div className={`${styles.tabs} my-3 ${isDark ? styles.darkTabs : ""}`}>
         <Link to="/" className={`${isDark ? styles.darkTab : ""} ${styles.tab} ${activeTab === "portfolio" && styles.active} ${activeTab === "portfolio" && (isDark ? styles.darkActiveTab : "")}`} onClick={() => dispatch(tabSliceActions.selectPortfolioTab())}>Portfolio</Link>
         <Link to="/about" className={`${isDark ? styles.darkTab : ""} ${styles.tab} ${activeTab === "about" && styles.active} ${activeTab === "about" && (isDark ? styles.darkActiveTab : "")}`} onClick={() => dispatch(tabSliceActions.selectAboutTab())}>About</Link>
+        <Link to="/achievements" className={`${isDark ? styles.darkTab : ""} ${styles.tab} ${activeTab === "achievements" && styles.active} ${activeTab === "achievements" && (isDark ? styles.darkActiveTab : "")}`} onClick={() => dispatch(tabSliceActions.selectAchievementsTab())}>Achievements</Link>
     </div>
 }
 

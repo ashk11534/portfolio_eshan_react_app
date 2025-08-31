@@ -6,6 +6,7 @@ import Experiences from "./Experiences";
 import Intro from "./Intro";
 import Portfolio from "./Portfolio";
 import Tabs from "./Tabs";
+import Achievements from "./Achievements";
 
 function MainContent(){
     return (
@@ -18,6 +19,7 @@ function MainContent(){
                 <Outlet>
                     <Portfolio/>
                     <About/>
+                    <Achievements/>
                 </Outlet>
             </div>
         </div>

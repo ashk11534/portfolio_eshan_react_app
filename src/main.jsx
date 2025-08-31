@@ -8,6 +8,7 @@ import About from './components/About.jsx'
 import MainContent from './components/MainContent.jsx'
 import portfolioStore from './store/index.js'
 import PortfolioDetailsModal from './components/PortfolioDetailsModal.jsx'
+import Achievements from './components/Achievements.jsx'
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,8 @@ const router = createBrowserRouter([
         element: <MainContent/>, 
         children: [
           {path: "/", element: <Portfolio/>},
-          {path: "/about", element: <About/>}
+          {path: "/about", element: <About/>},
+          {path: "/achievements", element: <Achievements/>},
         ]
       },
       
