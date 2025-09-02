@@ -21,7 +21,7 @@ function SoftSkills() {
             <h4 className="fw-bold  mt-4 mb-3">Soft Skills</h4>
             <div className={styles.softSkills}>
                 {softSkills.map((softSkill) => {
-                    return <p className={`${styles.softSkill} mb-3`} style={{fontSize: '17px'}}>{softSkill.title}</p>
+                    return <p key={softSkill.id} className={`${styles.softSkill} mb-3`} style={{fontSize: '17px'}}>{softSkill.title}</p>
                 })}
             </div>
         </>

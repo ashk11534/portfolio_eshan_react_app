@@ -10,11 +10,20 @@
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+.darkContactMeModalContainer{
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
 .contactMeModal{
     width: 600px;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
+}
+
+.darkContactMeModal{
+    background-color: #000 !important;
+    color: #fff !important;
 }
 
 .contactMeModalHeader{
@@ -63,3 +72,29 @@ textarea{
     border-radius: 6px;
     padding: 5px 15px;
 }
+
+/* Responsiveness (start) */
+
+@media(max-width: 1400px){
+
+}
+
+@media(max-width: 1200px){
+
+}
+
+@media(max-width: 992px){
+
+}
+
+@media(max-width: 768px){
+    .contactMeModal{
+        width: 90%;
+    }
+}
+
+@media(max-width: 576px){
+
+}
+
+/* Responsiveness (end) */

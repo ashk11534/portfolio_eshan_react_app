@@ -19,7 +19,7 @@ function WorkExperiences(){
         <>
             <h4 className="fw-bold  mt-4 mb-3">Work Experience</h4>
             {workExperiences.map((workExperience) => {
-                return <WorkExperience title={workExperience.title} workDuration={workExperience.work_duration} companyName={workExperience.company_name} description={workExperience.description}/>
+                return <WorkExperience key={workExperience.id} title={workExperience.title} workDuration={workExperience.work_duration} companyName={workExperience.company_name} description={workExperience.description}/>
             })}
         </>
     );

@@ -25,3 +25,34 @@
     border-radius: 8px;
     background-color: #fff;
 }
+
+/* Responsiveness (start) */
+
+@media(max-width: 1400px){
+
+}
+
+@media(max-width: 1200px){
+
+}
+
+@media(max-width: 992px){
+
+}
+
+@media(max-width: 768px){
+    .downloadCVBtn{
+        width: 100%;
+    }
+
+    .contactInfo{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 576px){
+
+}
+
+/* Responsiveness (end) */

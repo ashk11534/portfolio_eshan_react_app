@@ -38,8 +38,22 @@ const contactFormSlice = createSlice({
     }
 })
 
+const successAlertSlice = createSlice({
+    name: 'successAlert',
+    initialState: {isVisible: false},
+    reducers: {
+        toggleVisibility: (state, action) => {
+            state.isVisible = !state.isVisible;
+        },
+
+        closeAlert: (state, action) => {
+            state.isVisible = false;
+        }
+    }
+})
+
 const portfolioStore = configureStore({
-    reducer: {tab: tabSlice.reducer, darkMode: darkModeSlice.reducer, contactForm: contactFormSlice.reducer}
+    reducer: {tab: tabSlice.reducer, darkMode: darkModeSlice.reducer, contactForm: contactFormSlice.reducer, successAlert: successAlertSlice.reducer}
 })
 
 export const tabSliceActions = tabSlice.actions;
@@ -47,5 +61,7 @@ export const tabSliceActions = tabSlice.actions;
 export const darkModeSliceActions = darkModeSlice.actions;
 
 export const contactFormSliceActions = contactFormSlice.actions;
+
+export const successAlertSliceActions = successAlertSlice.actions;
 
 export default portfolioStore;

@@ -7,7 +7,7 @@ function PortfolioCard({id, imageUrl, tags, title}){
     const {isDark} = useSelector((store) => store.darkMode);
 
     return (
-        <div className={`${styles.portfolioCard} ${isDark ? styles.darkPortfolioCard : ""}`}>
+        <Link to={`/project-details/${id}`} className={`${styles.portfolioCard} ${isDark ? styles.darkPortfolioCard : ""}`}>
             <div className={styles.portfolioCardImageContainer}>
                 <img src={imageUrl} className={styles.portfolioCardImage}/>
             </div>
@@ -16,9 +16,8 @@ function PortfolioCard({id, imageUrl, tags, title}){
                     <p className="my-2">{tags.join(", ")}</p>
                     <h6>{title}</h6>
                 </div>
-                <Link to={`/project-details/${id}`} className={styles.portfolioCardDetailsBtn}>Details</Link>
             </div>
-        </div>
+        </Link>
     );
 }
 

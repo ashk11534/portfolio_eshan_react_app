@@ -22,7 +22,7 @@ function EducationQualifications(){
             <h4 className="fw-bold mt-4 mb-3">Education</h4>
             <div className={styles.educationQualifications}>
                 {educations.map((education) => {
-                    return <EducationQualification duration={education.education_duration} title={education.title} universityName={education.university_name}/>
+                    return <EducationQualification key={education.id} duration={education.education_duration} title={education.title} universityName={education.university_name}/>
                 })}
             </div>
         </>

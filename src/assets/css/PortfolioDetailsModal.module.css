@@ -1,5 +1,5 @@
 .portfolioDetailsContent{
-    width: 50%;
+    width: 70%;
 }
 
 .portfolioDetailsImage{
@@ -43,9 +43,9 @@
 }
 
 @media(max-width: 576px){
-  .portfolioDetailsImage{
+  /* .portfolioDetailsImage{
     height: 280px;
-  }
+  } */
 }
 
 /* Responsiveness (end) */

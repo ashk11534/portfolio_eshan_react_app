@@ -1,6 +1,8 @@
 .portfolioCard{
     width: 32.5%;
     margin-bottom: 20px;
+    text-decoration: none;
+    color: #333;
 }
 
 .portfolioCard p{
@@ -38,11 +40,15 @@
 /* Responsiveness (start) */
 
 @media(max-width: 1400px){
-
+  .portfolioCard{
+    width: 49.3%;
+  }
 }
 
 @media(max-width: 1200px){
-
+  .portfolioCard{
+    width: 49%;
+  }
 }
 
 @media(max-width: 992px){

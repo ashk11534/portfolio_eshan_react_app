@@ -37,7 +37,7 @@ function ContactInfo(){
 
     return <div className={`${styles.contactInfo} mt-4`}>
         <a href={resume.resume_file} className={styles.downloadCVBtn} style={{textDecoration: "none", color: "#333"}}>Download Resume <LiaDownloadSolid size={18}/></a>
-        <a href={basicConf.gmail_link} className={styles.contactIconContainer} style={{textDecoration: "none", color: "#333"}}>
+        <a href={basicConf.upwork_link} className={styles.contactIconContainer} style={{textDecoration: "none", color: "#333"}}>
             <FaUpwork size={20}/>
         </a>
 

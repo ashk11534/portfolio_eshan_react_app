@@ -36,7 +36,7 @@ function Experiences(){
         </div>
 
         <div className={styles.experience}>
-            <p>{basicConf.your_number_of_completed_projects}</p>
+            <p>{basicConf.your_number_of_research_papers}</p>
             <p>Research Papers</p>
         </div>
     </div>

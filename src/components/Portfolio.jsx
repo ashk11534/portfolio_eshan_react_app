@@ -1,7 +1,9 @@
+import { useDispatch } from "react-redux";
 import styles from "../assets/css/Portfolio.module.css";
 import Loader from "./Loader";
 import PortfolioCard from "./PortfolioCard";
 import { useEffect, useState } from "react";
+import { tabSliceActions } from "../store";
 
 const projectCards = [
     {imageUrl: "images/portfolio-card-img.png", tags: ["mobile", "ui design"], title: "File sharing concept"},
@@ -13,6 +15,12 @@ function Portfolio(){
 
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(false);
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(tabSliceActions.selectPortfolioTab())
+    }, [])
 
     useEffect(() => {
         async function fetch_projects(){

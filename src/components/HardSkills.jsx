@@ -23,7 +23,7 @@ function HardSkills(){
             <h4 className="fw-bold mt-4 mb-3">HardSkills</h4>
             <div className={styles.hardSkills}>
                 {hardSkills.map((hardSkill) => {
-                    return <HardSkill skillImage={hardSkill.skill_image} numberOfProjects={hardSkill.number_of_projects} title={hardSkill.title}/>
+                    return <HardSkill key={hardSkill.id} skillImage={hardSkill.skill_image} numberOfProjects={hardSkill.number_of_projects} title={hardSkill.title}/>
                 })}
             </div>
         </>
